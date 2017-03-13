@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.babis.myradioproject.Fragments.DetailsFragment"
+    android:background="#000000">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/chosen_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:padding="10dp"
+                android:scaleType="center"
+                android:gravity="bottom"
+                android:src="@drawable/flightplanmusic" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:text="Flight Plan(Tunes For Travel)" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_margin="10dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/image_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/playbutton" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
